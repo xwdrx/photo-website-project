@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotogra: Anna Nowak</title>
+    <link href="Omnie.css" type="text/css" rel="stylesheet" />
+    <link href="menu.css" type="text/css" rel="stylesheet" />
+    <link href="ikony.css" type="text/css" rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li id="portfolio"> <a href ="#" > Portfolio</a>
+            <ul >
+                <li><a href="galeria.html">Sesja</a></li>
+                 <li><a href="#">Sesja2</a></li>
+                 <li><a href="#">Sesja3</a></li>
+              </ul>
+                </li>
+            <li><a href="Omnie.html" class="active">O mnie</a></li>
+            <li><a href="cennik.html">Cennik</a></li>
+        </ul></li>
+        <div id="x-icon" onclick="toggleMobileMenu(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+            <ul class="mobile-menu">
+              <li><a href="index.html" >Home</a></li>
+              <li id="portfolio"> <a>Portfolio</a>
+              <ul >
+                  <li><a href="galeria.html">Sesja</a></li>
+                   <li><a href="#">Sesja2</a></li>
+                   <li><a href="#">Sesja3</a></li>
+                </ul>
+                  </li>
+              <li><a href="Omnie.html"class="active">O mnie</a></li>
+              <li><a href="cennik.html">Cennik</a></li>
+            </ul>
+          </div>
+    </header>
+    <div id="Page">
+        <div class="Info">
+            <div class="rightSlide">
+                <h1>O mnie</h1>
+                <p class="text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </p>
+            </div>
+        </div>
+    
+        <div class="container">
+            <div class="contact-box">
+                <div class="right">
+                    <div class="direct-contact-container">
+                      <ul class="contact_list">
+                        <li class="list-item"><i class="contact localisation"><span class="localisation_s">33-300, Nowy Sącz</span></i></li>
+                        <li class="list-item"><i class="contact phoneNum"><span class="phoneNum_s"><a href="#" title="zadzwon">+48 232 654 765</a></span></i></li>
+                        <li class="list-item"><i class="contact email"><span class="email_s"><a href="#" title="napisz do mnie">ranqwed@gmail.com</a></span></i></li> 
+                      </ul>
+                      <br>
+                    </div>
+                    <div id="Map">
+                      <!-- Google Map Copied Code -->
+                      <iframe src=
+                  "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1827.6994899508868!2d20.695612517917148!3d49.621178016191664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473de54a3e59bd09%3A0xde98aa6ddc4d9135!2zS2F3aWFybmlhIFNww7PFum5pb255IFPFgm93aWs!5e0!3m2!1spl!2spl!4v1642884090149!5m2!1spl!2spl"
+                              width="400"
+                              height="300"
+                              frameborder="0"
+                              style="border:0;"
+                              allowfullscreen=""
+                              aria-hidden="false"
+                              tabindex="0">
+                      </iframe>
+                  </div>
+                </div>	
+                <div class="left">
+                    <h2>Kontakt</h2>
+                    <input type="text" class="field" placeholder="Imie i nazwisko">
+                    <input type="text" class="field" placeholder="email">
+                    <input type="text" class="field" placeholder="numer telefonu">
+                    <textarea placeholder="wiadomosc" class="field"></textarea>
+                    <button class="btn">wyslij</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="foot">
+        <div id="ikony">
+        
+            <a href="#"> <i class="fa fa-facebook"></i></a>
+            <a href="#"> <i class="fa fa-twitter"></i></a>
+            <a href="#"> <i class="fa fa-instagram"></i></a>
+            <a href="#"> <i class="fa fa-linkedin"></i></a>
+       
+  
+          </div>
+  
+          <div id="prawa">
+              @Copyright 2021 | All rights reserved.
+          </div>
+  
+  
+    </div>
+    <script>
+       
+        function toggleMobileMenu(menu) {
+            menu.classList.toggle('open');
+        }
+            </script>
+</body>
+</html>

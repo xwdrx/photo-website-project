@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    flex-direction: column;
+}
+
+.Info{
+    background: url(images/prof.jpg) no-repeat left;
+    background-size: 55%;
+    background-position: 15px;
+    background-color: #f1f1f1;
+    overflow: hidden;
+    padding: 100px 0;
+ 
+}
+
+.rightSlide{
+    width: 55%;
+    float: right;
+    background-color: #fdfdfd;
+    padding: 120px;
+}
+
+.rightSlide h1{
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.text{
+    font-size: 13px;
+    color: #545454;
+    line-height: 30px;
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+/* ________________Contanct and locaton info____________________ */
+.container{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+}
+
+.container:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	filter: blur(50px);
+	z-index: -1;
+}
+.contact-box{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #fff;
+	box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+}
+/* left */
+.left{
+	padding: 25px 40px;
+	
+
+}
+/*
+.direct-contact-container{
+    border: 2px solid #545454; 
+
+
+}
+*/
+.contact-list {
+	list-style-type: none;
+	margin-left: -30px;
+	padding-right: 20px;
+   
+   
+  }
+  
+  .list-item {
+    list-style-type: none; 
+	line-height: 3;
+	color: #545454;
+    
+    
+  }
+  
+  .contact {
+	font: 300 18px 'Lato', sans-serif;
+	letter-spacing: 1.9px;
+    
+	
+  }
+  
+  .localisation {
+	margin-left: 62px;
+    
+  }
+  
+  .phoneNum {
+	margin-left: 56px;
+  }
+  
+  .email {
+	margin-left: 53px;
+  }
+  
+  .contact a {
+	text-decoration: none;
+	transition-duration: 0.2s;
+    color: #545454;
+
+  }
+  
+  .contact a:hover {
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  /*map  */
+
+.map{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding: 0;
+    
+    background-color: grey;
+    
+
+}
+/* right side */
+.right{
+	padding: 25px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h2{
+    margin-bottom: 20px;
+}
+
+h2:after{
+	
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #545454;
+    padding-bottom: 5px;
+}
+
+.field{
+	width: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	outline: none;
+	background-color: rgba(230, 230, 230, 0.6);
+	padding: 0.5rem 1rem;
+	font-size: 1.1rem;
+	margin-bottom: 22px;
+	transition: .3s;
+}
+
+.field:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea{
+	min-height: 150px;
+}
+
+.btn{
+	width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: #545454;
+	color: #fff;
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
+
+.btn:hover{
+    background-color: #545454;
+}
+
+.field:focus{
+    border: 2px solid #545454;
+    background-color: #fff;
+}
+
+/* __________________Media queries_________________________ */
+
+@media screen and (max-width:1200px){
+    .rightSlide{
+        padding: 80px;
+    }
+}
+
+@media screen and (max-width:1000px){
+    .Info{
+        background-size: 100%;
+        padding: 100px 40px;
+    }
+    .rightSlide{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:770px){
+    .Info{
+        padding: 0;
+    }
+    .rightSlide{
+        padding: 60px;
+    }
+    .contact-box{
+		grid-template-columns: 1fr;
+	}
+	.left{
+		height: 25%;
+        margin-top: -200px;
+        margin-bottom: 200px;
+        
+       
+	} 
+    #foot{
+     position: relative;
+    width: 100%;
+    
+}
+   
+}
+
+
+#foot{
+    width: 100%;
+}
